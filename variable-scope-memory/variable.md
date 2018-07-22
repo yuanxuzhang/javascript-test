@@ -13,4 +13,4 @@ typeof：是确定一个变量是字符串（string），数值（number），�
 __null在typeof下显示为object__ 。    
 instanceof: 检测引用类型变量的类型值（根据原型链来识别）。
 所有的引用类型都继承自object 引用类型 instanceof Object 返回true，基本类型不是对象 基本类型 instanceof Object 返回false。  
-[Code]()
+[Code](https://github.com/yuanxuzhang/javascript-test/blob/master/variable-scope-memory/TypeTest.js)

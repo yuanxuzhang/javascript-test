@@ -11,7 +11,7 @@ __函数__ 执行时,函数的执行环境会被推入环境栈中，函数执�
 #### 延长作用域链  
 虽然执行环境的类型总共只有两种（全局和局部），但是还是有其他办法来延长作用域链。有些语句可以在作用域链的前端临时增加一个变量对象， __该变量对象会在代码执行后被移除__ 。     
 try-catch语句的catch快  会创建一个新的变量对象，其中包含的是被抛出的错误对象的声明。  
-with语句 将指定的对象添加到作用域链中  [Code]()
+with语句 将指定的对象添加到作用域链中  [Code](https://github.com/yuanxuzhang/javascript-test/blob/master/variable-scope-memory/ExtendScopeChain.js)
 
 
 

@@ -38,5 +38,13 @@ ECMAScript可表示的最大值为Number.MAX_VALUE,
                  最小值为Number.MIN_VALUE,  
 超出范围的值负无穷Number.NEGATIVE_INFINITY,  
            正无穷Number.POSITIVE_INFINITY.  
-正负无穷值无法参加计算，使用**isFinite()** 检测和监控这些值是有必要的。
+正负无穷值无法参加计算，使用**isFinite()** 检测和监控这些值是有必要的。  
+- NaN  
+NaN(Not a Number)是一个特殊的数值，用于表示一个本来要返回数值的操作数未返回数值的情况。  
+NaN特点：  
+1. 任何涉及NaN的操作都会返回NaN，这个特点在多步计算中有可能导致问题。  
+2. NaN与任何值不相等，包括NaN本身。  
+可以使用 **isNaN()** 函数检测是不是数值。[Code]()  
+**isNaN在接收到一个值之后，会尝试将这个值转换为数值，某些不是数值的值会直接转换为数值，例如“10”或者Boolean值。儿任何不能转换为数值的值都会导致这个函数返回true** 
+PS：isNaN确实也适用于对象，在基于对象调用isNaN()函数时，会首先调用对象的valueof()方法，然后确定方法返回的值是否可以转换为数值，如果不能则基于这个返回值再调用toString()方法，再测试返回值。---这也是ECMAScript中内置函数和操作符的一般执行流程。  
                  

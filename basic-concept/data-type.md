@@ -11,3 +11,14 @@ Null类型是第二个只有一个值的数据类型，这个特殊的值时null
 如果定义的变量准备在将来用于保存对象，那么最好将该变量初始化为null而不是其他值，这样一来，只要检查null值就可以知道相应的变量是否已经保存了一个对象的引用。  
 实际上，undefined值是派生自null值的，因此ECMAScript-262规定对它们的相等性测试要返回true。  
 尽管null和undefined有这样的关系，但它们的用途完全不同，如前所述，无论在什么情况下都没有必要把一个变量的值显示地设置为undefined，可是同样的规则对null却不适应。即只要意在保存对象的变量还没有真正保存对象，就应该明确地让该变量保存null值。这样做不仅可以体现null作为空对象指针的惯例，而且也有助于进一步区分null和undefined。  
+### Boolean类型  
+Boolean类型只有两个字面值：true和false。这两个值与数字值不是一回事，true不一定是1，false也不一定等于0。  
+**Boolean类型的字面值true和false是区分大小写的**。  
+虽然Boolean类型的字面值只有两个，但ECMAScript中所有类型的值都与这两个值等价，可以调用Boolean()函数显示转化，控制语句也可自动转化。  
+###
+    数据类型                             转化为true值                                 转化为false值
+    Boolean                                 true                                         false
+    String                              任何非空字符串                                 ‘’空字符串
+    Number                               任何非零数字                                     0和Nan
+    Object                                 任何对象                                        null
+    Undefined                               -----                                      undefinded

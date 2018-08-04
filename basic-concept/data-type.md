@@ -15,10 +15,28 @@ Null类型是第二个只有一个值的数据类型，这个特殊的值时null
 Boolean类型只有两个字面值：true和false。这两个值与数字值不是一回事，true不一定是1，false也不一定等于0。  
 **Boolean类型的字面值true和false是区分大小写的**。  
 虽然Boolean类型的字面值只有两个，但ECMAScript中所有类型的值都与这两个值等价，可以调用Boolean()函数显示转化，控制语句也可自动转化。  
-###
+#####
     数据类型                             转化为true值                                 转化为false值
     Boolean                                 true                                         false
     String                              任何非空字符串                                 ‘’空字符串
     Number                               任何非零数字                                     0和Nan
     Object                                 任何对象                                        null
     Undefined                               -----                                      undefinded
+### Number  
+使用IEEE754格式来表示整数和浮点数。  
+- 浮点数字   
+**浮点数** ：数值中必须包含一个小数点，并且小数点后面必须至少有一位数字，小数点前面可以没有数字，但不推荐。  
+浮点数转换为整数情况：
+背景，浮点数值需要的内存空间是保存整数的两倍。  
+1. 小数点后没有任何数字。  
+2. 浮点数本身就是一个整数（1.0）
+默认情况下，ECMAScript会将那些小数点后面带有6个零以上的浮点数转换为以e表示法的数值。  
+浮点数值的最高精度是17位小数，但进行算数计算时其精度远远不如整数。  
+**浮点数值计算会产生舍入误差问题，永远不要测试某个特定的浮点数值**
+- 数值范围  
+ECMAScript可表示的最大值为Number.MAX_VALUE,  
+                 最小值为Number.MIN_VALUE,  
+超出范围的值负无穷Number.NEGATIVE_INFINITY,  
+           正无穷Number.POSITIVE_INFINITY.  
+正负无穷值无法参加计算，使用**isFinite()** 检测和监控这些值是有必要的。
+                 

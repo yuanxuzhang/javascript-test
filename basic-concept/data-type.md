@@ -103,3 +103,14 @@ ps：调用数值的toString()方法时，可以传递一个参数：输出数�
         - 如果只有toString()方法，则调用该方法（没有参数）并返回相应的结果。   
         - 如果值是null，则返回“null”。  
         - 如果值是undefined，则返回“undefined”。
+### Object  
+ECMAScript中的对象其实就是一组**数据**和**功能**的集合。对象可以通过执行new操作符后跟要创建的对象类型的名称来创建。而创建Object类型的实例并为其添加属性和（或）方法，就可以创建自定义的对象。  
+在ECMAScript中，Object类型是所有其他实例的基础。即，Object类型所具有的任何属性和方法也同样存在于更具体的对象中。  
+Object实例的属性和方法：  
+1. Constructor，保存着创建当前对象的函数。  
+2. hasOwnProperty(propertyName),检查给定的属性在当前对象实例中（**不是在实例的原型中**）是否存在。其中，作为参数的属性名必须义字符串形式指定。  
+3. isPrototypeof(object),检查传入的对象是否是另一个对象的原型。  
+4. propertyIsEnumerable(propertyName),用于检查给定的属性是否能够使用for-in语句来枚举。与hasOwnproperty()方法一样，作为参数的属性名必须义字符串形式指定。  
+5. toLocaleString(),返回对象的字符串表示，该字符串与执行环境的地区对应。  
+6. toString(),返回对象的字符串表示。  
+7. valueOf(),返回**对象的字符串、数值或布尔值表示**。通常与toString()方法的返回值相同。  

@@ -14,7 +14,7 @@ Null类型是第二个只有一个值的数据类型，这个特殊的值时null
 ### Boolean类型  [Code](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/code/BooleanFunction.js)  
 Boolean类型只有两个字面值：true和false。这两个值与数字值不是一回事，true不一定是1，false也不一定等于0。  
 **Boolean类型的字面值true和false是区分大小写的**。  
-虽然Boolean类型的字面值只有两个，但ECMAScript中所有类型的值都与这两个值等价，可以调用Boolean()函数显示转化，控制语句也可自动转化。  
+虽然Boolean类型的字面值只有两个，但ECMAScript中所有类型的值都与这两个值等价，可以调用Boolean()函数显示转化，**控制语句也可自动转化**。  
 #####
     数据类型                             转化为true值                                 转化为false值
     Boolean                                 true                                         false

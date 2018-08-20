@@ -1,17 +1,16 @@
 ## 操作符  
 ECMAScript操作符不同于其他语言，它们能够适用于许多值，例如字符串、数字值、布尔值，甚至对象。不过，在应用于对象时，相应的操作符通常都会调用对象的valueOf()和（或）toString()方法，以便取得操作值。  
-- [一元操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E4%B8%80%E5%85%83%E6%93%8D%E4%BD%9C%E7%AC%A6)  
-- [一元加和减操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E4%B8%80%E5%85%83%E5%8A%A0%E5%92%8C%E5%87%8F%E6%93%8D%E4%BD%9C%E7%AC%A6)  
-- [位操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E4%BD%8D%E6%93%8D%E4%BD%9C%E7%AC%A6) 
-
-- [布尔操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E5%B8%83%E5%B0%94%E6%93%8D%E4%BD%9Ccode)  
-- [乘性操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E4%B9%98%E6%80%A7%E6%93%8D%E4%BD%9C%E7%AC%A6)  
-- [加性操作](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E5%8A%A0%E6%80%A7%E6%93%8D%E4%BD%9C)  
-- [关系操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#关系操作符)  
-- [相等操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E7%9B%B8%E7%AD%89%E6%93%8D%E4%BD%9C%E7%AC%A6code)  
-- [条件操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E6%9D%A1%E4%BB%B6%E6%93%8D%E4%BD%9C%E7%AC%A6)  
-- [赋值操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E8%B5%8B%E5%80%BC%E6%93%8D%E4%BD%9C%E7%AC%A6)  
-- [逗号操作符](https://github.com/yuanxuzhang/javascript-test/blob/master/basic-concept/operation.md#%E9%80%97%E5%8F%B7%E6%93%8D%E4%BD%9C%E7%AC%A6)
+- [一元操作符](#一元操作符)  
+- [一元加和减操作符](#一元加和减操作符)  
+- [位操作符](#位操作符) 
+- [布尔操作符](#布尔操作)  
+- [乘性操作符](#乘性操作符)  
+- [加性操作](#加性操作)  
+- [关系操作符](#关系操作符)  
+- [相等操作符](#相等操作符)  
+- [条件操作符](#条件操作符)  
+- [赋值操作符](#赋值操作符)  
+- [逗号操作符](#逗号操作符)
 ### 一元操作符  
 Unary Operator：只能操作一个值的操作符。  
 1. 递增和递减  

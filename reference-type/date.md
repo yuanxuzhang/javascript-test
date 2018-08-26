@@ -11,3 +11,50 @@ Date 类型重写了 toLocaleString、toString 和 valueOf 方法，这些方法
 2. `toStirng()`通常返回带有时区信息的日期和时间，其中一半以军用时间（小时的范围是 0 到 23）表示  
 PS：以上两个方法仅在调试代码时比较有用，而在显示日期和时间时没有什么价值。  
 3. `valueOf()`不返回字符串，返回日期的毫秒数。可以方便使用比较操作符来比较日期值。  
+### 日期格式化方法  
+将日期格式化为字符串的方法[Code]()：  
+1. `toDateString()`以特定于实现的格式显示星期几、月、日和年。  
+2. `toTimeString()`以特定与实现的格式显示时、分、秒和时区。
+3. `toLocaleDateString()`以特定**地区**的格式显示星期几、月、日和年。  
+4. `toLocaleTimeString()`一特定于实现的格式显示时、分、秒。  
+5. `toUTCString()`以特定于实现的格式完整的 UTC 日期。  
+PS：以上这些字符串格式方法的输出也是因浏览器而异的，因此没有那一个方法能够用来在用户界面中显示一致的日期格式。  
+### 日期/时间组件方法  
+直接取得和设置日期中特定部分的方法：  
+
+    方法                                                  说明  
+    getTime()                              返回表示日期的毫秒数；与valueOf()方法返回的值相同
+    setTime(毫秒)                           以毫秒数设置日期，会改变整个日期
+    getFullYear()                          取得 4 位数的年份
+    getUTCFullYear()                       返回 UTC 日期的 4 位数年份
+    setFullYear(年)                         设置日期的年份。传入的年份必须是 4 位数字
+    setUTCFullYear(年)                      设置 UTC 日期的年份。传入的年份值必须是 4 位数字
+    getMonth()                              返回日其中的月份，其中 0 表示一月，11 表示十二月
+    getUTCMonth()                           返回 UTC 日期中的月份，其中 0 表示一月，11表示十二月
+    setMonth(月)                            设置日期的月份。传入的月份值必须大于 0，超过 11 则增加年份
+    setUTCMonth(月)                         设置 UTC 日期的月份，传入的月份值必须大于 0，超过 11 则增加年份  
+    getDate()                               返回日期月份中的天数（1 到 31）
+    getUTCDate()                            返回 UTC 日期月份中的天数（1 到 31）
+    setDate(日)                             设置日期月份中的天数。如果传入的值超过了该月中应有的天数，则增加月份
+    setUTCDate(日)                          设置 UTC 日期月份中的天数。如果传入的值超过了该月中应有的天数，则增加月份
+    getDay()                                返回日期中星期的星期几（其中 0 表示星期日，6 表示星期六）
+    getUTCDay()                             返回 UTC 日期中星期的星期几（其中 0 表示星期日，6 表示星期六）
+    getHours()                              返回日期中的小时数（0 到 23）
+    getUTCHours()                           返回 UTC 日期中的小时数（0 到 23）
+    setHours(时)                            设置日期其中的小时数。传入的值超过了 23 则增加月份中的天数。  
+    setUTCHours(时)                         设置 UTC 日期其中的小时数。传入的值超过了 23 则增加月份中的天数。
+    getMinutes()                            返回日期中的分钟数（0 到 59）
+    getUTCMinutes()                         返回 UTC 日期中的分钟数（0 到 59）
+    setMinnutes(分)                         设置日期中的分钟数。传入的值超过 59 则增加小时数 
+    setUTCMinutes(分)                       设置 UTC 日期中的分钟数。传入的值超过 59 则增加小时数 
+    getSeconds()                            返回日期中的秒数（0 到 59）
+    getUTCSeconds()                         返回 UTC 日期中的秒数（0 到 59）
+    setSeconds(秒)                          设置日期中的秒数。传入值超过了 59 会增加分钟数。  
+    setUTCSeconds(秒)                       设置 UTC 日期中的秒数。传入值超过了 59 会增加分钟数。
+    getMilliseconds()                       返回日期中的毫秒数
+    getUTCMilliseconds()                    返回 UTC 日期中的毫秒数
+    setMilliseconds(毫秒)                   设置日期中的毫秒数
+    setUTCMilliseconds(毫秒)                设置 UTC 日期中的毫秒数
+    getTimezoneOffset()                     返回本地时间与 UTC 时间相差的分钟数
+    PS：UTC日期指的是在没有时区偏差的情况下（将日期转换为 GMT 时间）的日期值。
+    

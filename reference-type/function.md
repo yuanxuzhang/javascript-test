@@ -7,6 +7,5 @@
 2. `var sum = function(num1, num2){
        return num1 + num2;
     }`  
-3. `// Function构造函数可以接收任意数量的参数，但最后一个参数始终被看做是函数体    
-    
-    var sum = new Function("num1", "num2", "return num1 + num2");`
+3. `// Function构造函数可以接收任意数量的参数，但最后一个参数始终被看做是函数体`       
+   `var sum = new Function("num1", "num2", "return num1 + num2");`

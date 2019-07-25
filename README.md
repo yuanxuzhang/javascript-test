@@ -5,3 +5,5 @@
 * [An Introduction to Source Maps](https://blog.teamtreehouse.com/introduction-source-maps)  
 * [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)  
 * [SVG Scalable Vector Graphics](https://developer.mozilla.org/en-US/docs/Web/SVG)  
+* [SVG 可缩放矢量图形](https://developer.mozilla.org/zh-CN/docs/Web/SVG)  
+

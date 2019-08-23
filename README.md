@@ -7,3 +7,8 @@
 * [SVG Scalable Vector Graphics](https://developer.mozilla.org/en-US/docs/Web/SVG)  
 * [SVG 可缩放矢量图形](https://developer.mozilla.org/zh-CN/docs/Web/SVG)  
 
+# CORS  
+* [mozilla-doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  
+* * [Cross-Origin Resource Sharing  W3C](https://www.w3.org/TR/cors/)  
+
+

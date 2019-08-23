@@ -9,6 +9,6 @@
 
 # CORS  
 * [mozilla-doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  
-* * [Cross-Origin Resource Sharing  W3C](https://www.w3.org/TR/cors/)  
+* [Cross-Origin Resource Sharing  W3C](https://www.w3.org/TR/cors/)  
 
 

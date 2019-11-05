@@ -11,4 +11,7 @@
 * [mozilla-doc](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)  
 * [Cross-Origin Resource Sharing  W3C](https://www.w3.org/TR/cors/)  
 
+# STORE  
+* [Web Storage](https://www.w3.org/TR/webstorage/)  
+
 

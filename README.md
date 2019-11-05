@@ -14,5 +14,7 @@
 # STORAGE   
 * [Web Storage](https://www.w3.org/TR/webstorage/)  
 * [COOKIE](https://tools.ietf.org/html/rfc6265)  
+# HTTP  
+* [Hypertext Transfer Protocol -- HTTP/1.1](https://tools.ietf.org/html/rfc2616)  
 
 

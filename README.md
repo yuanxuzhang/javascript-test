@@ -14,6 +14,8 @@
 # STORAGE   
 * [Web Storage](https://www.w3.org/TR/webstorage/)  
 * [COOKIE](https://tools.ietf.org/html/rfc6265)  
+# SESSION  
+* [Tomcat 中 Cookie 的解析](https://www.cnblogs.com/java-chen-hao/p/11316172.html)  
 # HTTP  
 * [Hypertext Transfer Protocol -- HTTP/1.1](https://tools.ietf.org/html/rfc2616)  
 
